@@ -44,6 +44,7 @@ body
 .content
 {
 	width: 1000px;
+	min-height: 420px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: justify;
@@ -113,4 +114,14 @@ ol > li:hover
 ol > li:hover > a
 {
 	color: #ffffff;
+}
+
+.row
+{
+	margin: 20px 10px;
+}
+
+#comment
+{
+	resize: none;
 }

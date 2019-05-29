@@ -44,18 +44,11 @@ body
 .content
 {
 	width: 1000px;
-	min-height: 420px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: justify;
 	padding-top: 10px;
-}
-
-.socials
-{
-	width:100%;
-	text-align: center;
-	background-color: #292929;
+	min-height: 449px;
 }
 
 .footer
@@ -63,16 +56,7 @@ body
 	text-align: center;
 	background-color: #332900;
 	color: #ffcc00;
-	padding: 30px;
-}
-
-.sticky
-{
-	width: 100%;
-	position: fixed;
-	left: 0;
-	top: 0;
-	z-index: 100;
+	padding: 20px;
 }
 
 ol
@@ -124,4 +108,31 @@ ol > li:hover > a
 #comment
 {
 	resize: none;
+}
+
+#amount{
+	text-align: right;
+}
+
+input, select{
+	width: 160px;
+	font-weight: bold;
+}
+
+input:focus:not([type="reset"]), select:focus, textarea:focus, input[type="submit"]:hover, input[type="reset"]:hover{
+	outline: none;
+	box-shadow: 0px 0px 5px 5px #ffcc00;
+}
+
+input[type="submit"]{
+	width: 160px;
+	height: 30px;
+	background-color: #00ff00;
+}
+
+input[type="reset"]{
+	margin-left: 30px;
+	width: 160px;
+	height: 30px;
+	background-color: #ff0000;
 }

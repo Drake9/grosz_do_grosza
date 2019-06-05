@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title>Grosz do grosza</title>
+	
+	<meta name="description" content="Aplikacja internetowa do planowania domowego budżetu" />
+	<meta name="keywords" content="budżet, oszczędzanie, pieniądze, planowanie, wydatki" />
+	<meta name="author" content="Marcin Zapała" />
+	
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Exo:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+	<link href="css/fontello.css" rel="stylesheet" type="text/css" />
+	
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="header">
+		
+			<div class="logo">
+				<i class="icon-money"></i>
+				Grosz do grosza
+			</div>
+		</div>
+		<div class="nav">
+			<ol>
+				<li><a href="addIncome.html">Dodaj przychód</a></li>
+				<li><a href="addExpense.html">Dodaj wydatek</a></li>
+				<li><a href="viewBalance.html">Przeglądaj bilans</a></li>
+				<li><a href="settings.html">Ustawienia</a></li>
+				<li><a href="logout.html">Wyloguj</a></li>
+			</ol>
+		
+		</div>
+			
+		<div class="content">
+		
+			<div class="dropdown">
+				<button class="dropButton">Okres</button>
+				<div class="dropdown-content">
+					<a href="#">bieżący miesiąc</a>
+					<a href="#">poprzedni miesiąc</a>
+					<a href="#">bieżący rok</a>
+					<a href="#">niestandardowy</a>
+				</div>
+			</div>
+			
+			<h2>Bilans za okres 01.05.2019 - 31.05.2019</h2>
+			
+			<h3>Przychody</h3>
+			
+			<div id="incomes">
+				<div class="category">wynagrodzenie</div><div class="amount">3000 zł</div><div style="clear: both;"></div>
+				<div class="category">sprzedaż allegro</div><div class="amount">200 zł</div><div style="clear: both;"></div>
+				<h4>Suma przychodów: 3200 zł</h4>
+			</div>
+			
+			<h3>Wydatki</h3>
+			
+			<div id="expenses">
+				<div class="category">mieszkanie</div><div class="amount">1000 zł</div><div style="clear: both;"></div>
+				<div class="category">jedzenie</div><div class="amount">750 zł</div><div style="clear: both;"></div>
+				<div class="category">transport</div><div class="amount">750 zł</div><div style="clear: both;"></div>
+				<h4>Suma przychodów: 2500 zł</h4>
+			</div>
+			
+			<h3>Bilans: 500 zł</h3>
+			
+			Gratulacje! Świetnie dysponujesz finansami!
+			
+			<div id="chartdiv"></div>
+			
+		</div>
+		
+		<div class="footer">Grosz do grosza &copy; 2019 Dziękujemy za wizytę!</div>
+	</div>
+
+	<script src="https://www.amcharts.com/lib/4/core.js"></script>
+	<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+	<script src="https://www.amcharts.com/lib/4/themes/moonrisekingdom.js"></script>
+	<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+	<script src='viewBalance.js'></script>;
+	
+</body>
+</html>
